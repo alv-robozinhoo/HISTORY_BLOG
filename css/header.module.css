@@ -1,0 +1,29 @@
+body, li, ul, p{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2em;
+    font-family: Calibri;
+} 
+
+a{ 
+    text-decoration: none; 
+    color: #000;
+}
+
+.cabecalho{
+    background: rgb(179, 24, 24);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.menu { display: flex; }
+.menu li{ margin-left: 10px; }
+.menu a:hover{ font-size: 1.07em; }
+.menu li a { 
+    display: block; 
+    padding: 10px;
+}
