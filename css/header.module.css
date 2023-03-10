@@ -6,13 +6,13 @@ body, li, ul, p{
     font-family: Calibri;
 } 
 
-a{ 
+a{
     text-decoration: none; 
-    color: #000;
+    color: white;
 }
 
 .cabecalho{
-    background: rgb(179, 24, 24);
+    background: #222;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

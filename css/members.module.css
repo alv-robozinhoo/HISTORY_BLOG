@@ -11,7 +11,8 @@ h1{
 
 h2{
     font-size: 20px;
-    font-family: 'Rubik Iso', cursive;
+    font-family: 'Space Mono', monospace;
+    letter-spacing: 2.5px;
 }
 
 .general{
