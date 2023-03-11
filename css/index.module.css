@@ -6,17 +6,24 @@
     max-width: 800px;
 }
 
-.body{ display: grid; }
-.body img{ 
+.box{ display: grid; }
+.box img{ 
     height: 250px; 
+    margin: 0px;
     grid-column: 1;
     grid-row: 1/3;
 }
-.body p{ 
+.box p{ 
     background: rgba(0,0,0,0.5); 
     padding: 10px;
+    font-size: 1.2em;
     color: whitesmoke;
+    grid-column: 1;
     grid-row: 2;
+}
+
+.box:hover{
+    font-size: 1.2em;
 }
 
 #sec1 h1{
@@ -25,4 +32,32 @@
     word-spacing: 8px;
     text-align: center;
     font-family: Ubuntu, sans-serif;
+}
+
+@media (max-width: 600px){
+    .box img{ 
+        height: 200px; 
+        margin: 0px;
+        grid-column: 1;
+        grid-row: 1/3;
+    }
+
+    .box p{ 
+        background: rgba(0,0,0,0.5); 
+        padding: 10px;
+        font-size: 1em;
+        color: whitesmoke;
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .box:hover{
+        font-size: 1.1em;
+    }
+    
+    .body{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
 }
