@@ -1,5 +1,29 @@
-h1{
-    text-indent: 10rem;
+body{
+    background: url("https://omicron.aeon.co/images/bbcefdd0-732a-49ad-a49b-a14428f06e17/header_essay-gettyimages-1173808799.jpg");
+}
+
+#content{
+    background-color: white;
+    padding: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#content h1{
+    text-align: center;
     font-family: Ubuntu, sans-serif;
     font-size: 2em;
+}
+
+#content h2{
+    text-indent: 10rem;
+    font-family: Ubuntu, sans-serif;
+    font-size: 1.8em;
+}
+
+#content p{
+    font-family: 'Open Sans', sans-serif;
+    text-indent: 1.4em;
+    font-size: 1.1em;
+    margin-bottom: 50px;
 }
