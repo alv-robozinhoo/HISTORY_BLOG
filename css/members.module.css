@@ -1,4 +1,4 @@
-section{
+#main{
     text-align: center;
     font-family: Ubuntu, sans-serif;
 }
@@ -36,6 +36,14 @@ h2{
 .social img { 
     height: 20px; 
     padding: 5px;
+}
+
+.social li{
+    transition: 0.2s;
+}
+
+.social li:hover{
+    transform: scale(1.2);
 }
 
 @media (max-width: 1300px){
