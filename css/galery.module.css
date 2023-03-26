@@ -4,6 +4,8 @@ h1{
     font-family: Ubuntu, sans-serif;
 }
 
+body{ background-color:  rgba(0, 0, 0, 0.1); }
+
 #content{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -38,9 +40,9 @@ h1{
 
 #btn{
     margin: 0% 7.7% 3% 7.7%;
-    background: rgb(177, 25, 25);
+    background: #222;
     border: none;
-    color: black;
+    color: whitesmoke;
     font-weight: 500;
     font-family: Ubuntu, sans-serif;
     cursor: pointer;

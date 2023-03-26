@@ -23,6 +23,7 @@ body{
 
 #content p{
     font-family: 'Open Sans', sans-serif;
+    text-align: justify;
     text-indent: 1.4em;
     font-size: 1.1em;
     margin-bottom: 50px;
@@ -79,18 +80,19 @@ body{
     margin-top: 2px;
 }
 
-li a:hover{
+.sidebar li a:hover{
     font-style: italic;
     color: rgb(205, 255, 238);
     text-decoration: underline;
 }
 
 
-@media (max-width: 480px){
+@media (max-width: 720px){
     .sidebar{
+        background-color: rgba(0,0,0, 0.6);
         float: inline-start;
         top: 0;
-        width: 80%;
+        width: 85%;
         margin: 120px 15px 0px 15px;
         color: white;
         border: 1px solid #f1f1f1;
