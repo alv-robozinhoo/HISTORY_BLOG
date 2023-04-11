@@ -1,20 +1,23 @@
 .body{
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 40px;
+    margin-right: 40px;
     display: flex;
     flex-wrap: wrap;
-    max-width: 800px;
+    justify-content: center;
 }
 
 .box{ 
     transition: .7s;
     display: grid; 
-    height: 250px;
+    height: 300px;
+    margin-right: 40px;
+    margin-bottom: 20px;
     padding: 0px;
 }
 
 .box img{ 
-    height: 250px; 
+    height: 300px; 
+    width: 500px;
     margin: 0px;
     grid-column: 1;
     grid-row: 1/3;
