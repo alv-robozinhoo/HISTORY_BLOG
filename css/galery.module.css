@@ -69,6 +69,23 @@ body{ background-color:  rgba(0, 0, 0, 0.1); }
     transform: scale(1.5);
 }
 
+#ftr{
+    padding-top: 30px;
+    background: #222;
+    color: whitesmoke;
+    text-align: center;
+    align-items: center;
+}
+
+#ftr img{
+    height: 60px;
+    transition-duration: 300ms;
+}
+
+#ftr img:hover{
+    height: 70px;
+}
+
 @media (max-width: 1360px) {
     #content{
         justify-content: center;
