@@ -107,3 +107,33 @@ body{
         margin-right: 10px;
     }
 }
+
+.lista{
+    display: flex;
+    justify-content: center;
+}
+
+.item button{
+    display: block;
+    padding: 10px;
+    margin: 20px;
+}
+
+article{
+    text-align: justify;
+}
+article .image{
+    text-align: center;
+    margin: 30px;
+}
+
+.image > img{
+    height: 350px;
+}
+
+
+
+.item img{
+    
+    width: 50px;
+}

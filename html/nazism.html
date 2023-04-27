@@ -31,27 +31,71 @@
             <img src="../assets/640px_swastika.png" alt="swastica">
         </section>
         <section class="main">
-            <p> 
-                O nazismo foi uma ideologia política e social que surgiu na Alemanha na década de 1920, 
-                liderada pelo partido nazista e seu líder, Adolf Hitler. Baseado em conceitos de superioridade racial, 
-                o nazismo defendia a criação de uma sociedade ariana pura e o extermínio de grupos considerados 
-                inferiores, como judeus, ciganos, homossexuais e pessoas com deficiência. O regime nazista foi 
-                responsável por um dos períodos mais sombrios da história da humanidade, durante a Segunda Guerra 
-                Mundial, quando perpetraram genocídios em larga escala e causaram a morte de milhões de pessoas em 
-                campos de concentração e extermínio.
-            </p>
-            <p>
-                O contexto histórico do nazismo pode ser compreendido a partir de uma série de fatores políticos, 
-                econômicos e sociais que afetaram a Alemanha na primeira metade do século XX. Após a Primeira 
-                Guerra Mundial, a Alemanha enfrentou um período de crise econômica e política, com altas taxas de 
-                desemprego, inflação e instabilidade política. O tratado de Versalhes, que encerrou a Primeira 
-                Guerra Mundial, impôs pesadas sanções econômicas e territoriais à Alemanha, o que gerou um forte 
-                sentimento de humilhação e revanchismo no país. Nesse contexto, surgiu uma série de grupos 
-                nacionalistas e anti-semitas, que encontraram em Adolf Hitler e no Partido Nazista uma plataforma 
-                para propagar suas ideias. Com a ascensão de Hitler ao poder em 1933, a Alemanha passou a viver sob 
-                um regime autoritário e totalitário, que promovia a repressão política, o controle da mídia e a 
-                perseguição de grupos considerados "indesejáveis" pela ideologia nazista.
-            </p>
+
+            <ul class="lista">
+                <li class="item">
+                    <button id="botao_origem" onclick="mudarDivisaoDaPaginaNazismo('origem')">Origem</button>
+                </li>
+                <li class="item">
+                    <button id="botao_ascensao" onclick="mudarDivisaoDaPaginaNazismo('ascensao')">Ascensão</button>
+                </li>
+                <li class="item">
+                    <button id="botao_dinamicas" onclick="mudarDivisaoDaPaginaNazismo('dinamicas')">Dinâmicas</button>
+                </li>
+                <li class="item">
+                    <button id="botao_fim"  onclick="mudarDivisaoDaPaginaNazismo('fim')">Fim</button>
+                </li>
+            </ul>
+
+            <script src="../js/nazism_page_buttons.js"></script>
+            <script>
+                window.onload = function(){
+                    mudarDivisaoDaPaginaNazismo('origem');
+                    controlarBotoesVoltarEAvançar();
+                }
+            </script>
+            
+            <div id="origem" style="display: none;">
+                <h2>Origem do Nazismo</h2>
+                <p>Após o término da Primeira Guerra Mundial, a Alemanha se encontrava em uma situação extremamente difícil. As guerras são empreendimentos caros, especialmente quando se perde, como foi o caso da Alemanha. Em 1919, a situação piorou ainda mais com a assinatura do Tratado de Versalhes pelas potências europeias e pelos Estados Unidos. O tratado estabeleceu que a Alemanha era a única responsável pelo conflito e que caberia a ela reparar os prejuízos da guerra. Além disso, proibiu a Alemanha de ter uma força militar superior a 100 mil homens, o que foi desrespeitado, e removeu territórios da Alemanha, tanto na própria Alemanha quanto na África.</p>
+                <div class="image">
+                    <img src="../assets/nazismo/fim_primeira_guerra.jpg" alt="Imagem Fim da Primeira Guerra Mundial">
+                </div>
+                <p>Ainda em 1919, foi constituída na Alemanha a República de Weimar, um regime parlamentarista e liberal que valorizava a democracia e buscava resolver os graves problemas que o país enfrentava na fase do pós-guerra. O objetivo mais urgente era reorganizar as estruturas políticas e econômicas da Alemanha, e a opção pelo modelo republicano pareceu a melhor aos envolvidos no processo. O nome "Weimar" foi escolhido em homenagem à cidade em que ocorreu a elaboração da nova Carta Constitucional.</p>
+                <p>A situação já era ruim, mas piorou ainda mais em 1929, com a crise econômica mundial. A crise causou hiperinflação na Alemanha, fazendo com que o dinheiro perdesse quase todo o seu valor. O desemprego atingiu o alarmante índice de 44%.</p>
+                <div class="image">
+                    <img src="../assets/nazismo/inflação.jpg" alt="Imagem Inflação na Alemanha Pós-Primeira-Guerra">
+                </div>
+                <p>Parte da sociedade alemã sentiu-se traída com a derrota considerada impossível por grande parte da população. Esse ressentimento, aliado à forte nostalgia militarista que se espalhou pelo país, à violência que se propagava, à política e à sociedade extremamente radicais, à crise econômica e ao temor do comunismo soviético, criou um ambiente propício para o surgimento e crescimento do nazismo na Alemanha.</p>
+            </div>
+            
+            <div id="ascensao" style="display: none;">
+                piroca
+            </div>
+            
+            <div id="dinamicas" style="display: none;">
+                esperma
+            </div>
+            
+            <div id="fim" style="display: none;">
+                empadinha de camarão
+            </div>
+
+
+            <ul class="lista">
+                <li class="item">
+                    <button id="voltar" onclick="voltar()" style="display: none;">
+                        <img src="../assets/voltar.png" alt="Botão voltar">
+                    </button>
+                </li>
+                <li class="item">
+                    <button id="avançar" onclick="avançar()" style="display: none;">
+                        <img src="../assets/avançar.png" alt="Botão avançar">
+                    </button>
+                </li>
+            </ul>
+
+
         </section>
         <aside class="sidebar">
             <h3><i>MENU</i></h3>
