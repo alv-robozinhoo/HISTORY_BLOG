@@ -22,8 +22,9 @@ a{
 
 .menu { display: flex; }
 .menu li{ margin-left: 10px; }
-.menu a:hover{ font-size: 1.07em; }
+.menu a:hover{ transform: scale(1.1); }
 .menu li a { 
-    display: block; 
+    display: block;
     padding: 10px;
+    transition: 80ms;
 }

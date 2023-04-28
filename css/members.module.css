@@ -45,10 +45,6 @@ h2{
     display: flex;
     flex-wrap: wrap;
 }
-.social img { 
-    height: 28px;
-    padding: 5px;
-}
 
 .social li{
     transition: 0.2s;
@@ -56,6 +52,13 @@ h2{
 
 .social li:hover{
     transform: scale(1.2);
+}
+
+i {
+    padding: 15px 5px;
+    color: white;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
 .desc{
