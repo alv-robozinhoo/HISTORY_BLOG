@@ -1,3 +1,7 @@
+body{
+    color: white
+}
+
 #main{
     text-align: center;
     font-family: Ubuntu, sans-serif;
@@ -7,6 +11,7 @@ h1{
     font-size: 40px;
     font-weight: bolder;
     margin-bottom: 30px;
+    color: black;
 }
 
 h2{
@@ -16,7 +21,6 @@ h2{
 }
 
 .general{
-    margin: 30px;
     display: grid;
     text-align: center;
     grid-gap: 30px;
@@ -28,13 +32,21 @@ h2{
     height: 300px;
 }
 
+.general div{
+    border: solid 1px;
+    border-radius: 40px;
+    background: #2e2e2e;
+    margin: 20px;
+    padding: 20px;
+}
+
 .social{
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
 }
 .social img { 
-    height: 20px; 
+    height: 28px;
     padding: 5px;
 }
 
@@ -46,7 +58,15 @@ h2{
     transform: scale(1.2);
 }
 
-@media (max-width: 1300px){
+.desc{
+    font-size: 1.4rem;
+    text-align: justify;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 8%;
+}
+
+@media (max-width: 1700px){
     .general {
         grid-template-columns: 1fr 1fr;
     }
