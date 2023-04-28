@@ -99,17 +99,17 @@ body{
 article{
     text-align: justify;
 }
+
 article .image{
     text-align: center;
     margin: 30px;
 }
 
-.image > img{
+.image  img{
     height: 350px;
 }
 
-.item img{
-    
+.item img{ 
     width: 50px;
 }
 
@@ -130,6 +130,7 @@ h2{
     margin-bottom: 20px;
 }
 
+@media (max-width: 1020px){ .image img{height: 200px;} }
 
 @media (max-width: 780px){
     .sidebar{
@@ -154,7 +155,13 @@ h2{
     .item button{
         font-size: 1.2rem;
     }
+
+    .image  img{
+        height: 300px;
+    }
 }
+
+@media (max-width: 650px){ .image img{height: 200px;} }
 
 @media (max-width: 480px){
     .lista{
@@ -163,5 +170,9 @@ h2{
 
     .item button{
         font-size: 1.2rem;
+    }
+
+    .image  img{
+        height: 200px;
     }
 }
