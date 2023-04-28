@@ -2,8 +2,8 @@
 var totas_as_divisoes = ["origem", "ascensao", "dinamicas", "fim"];
 var todos_os_botoes = ["botao_origem", "botao_ascensao", "botao_dinamicas", "botao_fim"]
 var divisao_atual = undefined;
-var cor_sessao_ativa = 'blue';
-var cor_sessao_off = 'red';
+var cor_sessao_ativa = 'purple';
+var cor_sessao_off = 'black';
 
 function hide(element_id){
     document.getElementById(element_id).style.display = 'none';
@@ -11,9 +11,9 @@ function hide(element_id){
 
 function updateButtonCollor(element_id){
     if(element_id === divisao_atual){
-        document.getElementById('botao_' + element_id).style.background = cor_sessao_ativa
+        document.getElementById('botao_' + element_id).style.color = cor_sessao_ativa
     }else{
-        document.getElementById('botao_' + element_id).style.background = cor_sessao_off
+        document.getElementById('botao_' + element_id).style.color = cor_sessao_off
     }
 
 }
