@@ -1,6 +1,6 @@
 
-var totas_as_divisoes = ["origem", "ascensao", "dinamicas", "fim"];
-var todos_os_botoes = ["botao_origem", "botao_ascensao", "botao_dinamicas", "botao_fim"]
+var totas_as_divisoes = ["origem", "ascensao", "dinamicas", "fim", "neo"];
+var todos_os_botoes = ["botao_origem", "botao_ascensao", "botao_dinamicas", "botao_fim", "botao_neo"]
 var divisao_atual = undefined;
 var cor_sessao_ativa = 'purple';
 var cor_sessao_off = 'black';
@@ -37,6 +37,8 @@ function avançar(){
         mudarDivisaoDaPaginaNazismo('dinamicas')
     }else if(divisao_atual === 'dinamicas'){
         mudarDivisaoDaPaginaNazismo('fim')
+    }else if(divisao_atual === 'fim'){
+        mudarDivisaoDaPaginaNazismo('neo')
     }
     controlarBotoesVoltarEAvançar()
 
@@ -49,6 +51,8 @@ function voltar(){
         mudarDivisaoDaPaginaNazismo('ascensao')
     }else if(divisao_atual === 'fim'){
         mudarDivisaoDaPaginaNazismo('dinamicas')
+    }else if(divisao_atual === 'neo'){
+        mudarDivisaoDaPaginaNazismo('fim')
     }
     controlarBotoesVoltarEAvançar()
 }
@@ -65,6 +69,9 @@ function controlarBotoesVoltarEAvançar(){
         document.getElementById('voltar').style.display = 'block'
         document.getElementById('avançar').style.display = 'block'
     }else if(divisao_atual === 'fim'){
+        document.getElementById('voltar').style.display = 'block'
+        document.getElementById('avançar').style.display = 'block'
+    }else if(divisao_atual === 'neo'){
         document.getElementById('voltar').style.display = 'block'
         document.getElementById('avançar').style.display = 'none'
     }
